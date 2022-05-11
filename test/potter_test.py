@@ -6,6 +6,7 @@ import unittest
 class PotterTest(unittest.TestCase):
     def setUp(self):
         self.potter = Potter([])
+        
     def test_basic(self):
         self.assertEqual(self.potter.price([]), 0)
         self.assertEqual(self.potter.price([1]), 8)
@@ -25,7 +26,6 @@ class PotterTest(unittest.TestCase):
         self.assertEqual(2 * (8 * 2 * 0.95), self.potter.price([0, 0, 1, 1]))
         self.assertEqual((8 * 4 * 0.8) + (8 * 2 * 0.95), self.potter.price([0, 0, 1, 2, 2, 3]))
         self.assertEqual(8 + (8 * 5 * 0.75), self.potter.price([0, 1, 1, 2, 3, 4]))
-
 
     def testEdgeCases(self):
         self.assertEqual(2 * (8 * 4 * 0.8), self.potter.price([0, 0, 1, 1, 2, 2, 3, 4]))
