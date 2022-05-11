@@ -1,4 +1,4 @@
-from potter import *
+from Potter import *
 
 import unittest
 
