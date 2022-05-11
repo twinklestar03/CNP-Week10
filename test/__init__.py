@@ -1,1 +1,0 @@
-from .potter_test import PotterTest
