@@ -2,4 +2,13 @@
 
 - [Problem](https://codingdojo.org/kata/Potter/)
 
-- Project Structure
+## Project Structure
+```
+├── Potter
+│   ├── __init__.py
+│   └── potter.py
+├── README.md
+└── tests
+    ├── __init__.py
+    └── test_potter.py
+```
