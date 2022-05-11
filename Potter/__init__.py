@@ -1,1 +1,1 @@
-from .potter import Potter
+from .potter import *
